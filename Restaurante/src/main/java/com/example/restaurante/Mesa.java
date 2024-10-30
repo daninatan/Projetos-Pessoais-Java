@@ -1,4 +1,5 @@
-package restaurante;
+package com.example.restaurante;
+
 import java.util.ArrayList;
 
 public class Mesa {
