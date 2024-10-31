@@ -19,8 +19,10 @@ public class App extends Application {
 
     public static void main(String[] args) {
         //launch();
-        Cardapio.adicionarItemCardapio("X-SALADA", "Pao, carne, queijo, salada, tomate", "18");
-        Cardapio.adicionarItemCardapio("Carne", "Carne assada", "40");
-        Cardapio.getTodosItens();
+        Estoque.adicionarItemEstoque("Carne", 50);
+        Estoque.adicionarItemEstoque("Queijo", 30);
+        Estoque.exibirEstoque();
+        Estoque.adicionarItemEstoque("Carne", 10);
+        Estoque.exibirEstoque();
     }
 }
