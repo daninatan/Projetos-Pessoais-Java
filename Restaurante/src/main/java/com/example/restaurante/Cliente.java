@@ -2,17 +2,23 @@ package com.example.restaurante;
 
 public class Cliente {
 
-    private String nome;
+    private String nome = "";
     private Comanda comanda;
+    private Mesa mesa = new Mesa();
 
     public Cliente(){
         this.nome = "Cliente";
         comanda = new Comanda();
     }
 
-    public Cliente(String nome){
+    public Cliente(String nome, Mesa mesa){
         this.nome = nome;
         comanda = new Comanda();
+        this.mesa = mesa;
+    }
+
+    public String getNome(){
+        return nome;
     }
 
 
@@ -27,5 +33,9 @@ public class Cliente {
 
     public void exibirComanda(){
         comanda.exibirComanda();
+    }
+
+    public void sairDaMesa(){
+        mesa.removerCliente(this);
     }
 }

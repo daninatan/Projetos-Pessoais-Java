@@ -19,12 +19,8 @@ public class App extends Application {
 
     public static void main(String[] args) {
         //launch();
-
-        Cliente Daniel = new Cliente();
-        Daniel.fazerPedido("Lanche", 2, 30);
-        Daniel.fazerPedido("Lanche", 2, 30);
-        Daniel.fazerPedido("Lanche", 2, 30);
-        Daniel.fazerPedido("Coca", 1, 10);
-        Daniel.exibirComanda();
+        Cardapio.adicionarItemCardapio("X-SALADA", "Pao, carne, queijo, salada, tomate", "18");
+        Cardapio.adicionarItemCardapio("Carne", "Carne assada", "40");
+        Cardapio.getTodosItens();
     }
 }
